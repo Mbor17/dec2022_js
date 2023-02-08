@@ -24,6 +24,10 @@
 //
 // }
 
+// for (let i = 0; i < 10; i++) {
+//     document.write(`<div> Hello</div>`);
+// }
+
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
 
 // let users = [
@@ -48,6 +52,11 @@
 //              <p>${user.status}</p>
 //         </div>
 //      `)
+//
+// }
+
+// for (let i = 0; i < 10; i++) {
+//     document.write(`<div>Hello--${i}</div>`);
 //
 // }
 
@@ -142,6 +151,14 @@
 //     document.write(`<h2> ${locations[i].title}</h2>`);
 //     document.write(`</div>`)
 //     i++;
+// }
+
+// let i=0;
+// while (i<20){
+//     document.write(`<div>
+// Hello
+// </div>`)
+//     i++
 // }
 
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
@@ -239,13 +256,20 @@
 //     i++;
 // } while (i<locations.length)
 
-
+//
+// let i=0;
+// while (i<20){
+//     document.write(`<div>
+// Hello--${i}
+// </div>`)
+//     i++
+// }
 // - Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону
 // Масив:
 
-//
-//     let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+
+    // let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
 //
 // for (const listOfItem of listOfItems) {
 //     document.write(`<div>
@@ -255,6 +279,14 @@
 //                   </div>
 // `)
 // }
+
+// document.write(`<ul>`)
+//
+// for (const listOfItem of listOfItems) {
+// document.write(`<li>${listOfItem}</li>`);
+// }
+// document.write(`</ul>`)
+
 
 //
 // ШАБЛОН:
@@ -278,6 +310,7 @@
 // побудувати структуру по шаблону  Зробити адекватну стилізацію
 // Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
 //
+
 // let products = [
 //     {
 //         title: 'milk',
@@ -300,9 +333,11 @@
 //         image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
 //     },
 // ];
+//
 
 // for (let product of products) {
-//     document.write(`<div class="product-card">
+//     document.write(`
+//     <div class="product-card">
 // <h3 class="product-title">${product.title} ${product.price}</h3>
 // <img src="${product.image}" alt=""class="product-image">
 //
