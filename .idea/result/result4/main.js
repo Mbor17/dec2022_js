@@ -21,41 +21,59 @@
 
 // - створити функцію яка приймає масив та виводить кожен його елемент
 
-// let arr=[1,2,3,4];
-// function and() {
+
+// function and(arr) {
 //     for (const array of arr) {
+//         console.log(array);
 //     }
 // }
-// console.log(arr);
+// and([1,2,3,4]);
+
 
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
 
 // function foo(text) {
-//     console.log(arguments);
-//     return arguments=`<p>${text} </p>`;
+//     document.write(`<p>${text}</p>`);
 // }
-// console.log(foo('hello'));
+// foo('hello');
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
+// function foo(text) {
+//     document.write(`<ul>
+//         <li>${text}</li>
+//         <li>${text}</li>
+//         <li>${text}</li>
+//     </ul>`)
+// }
+// foo('hello');
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 
 // function foo(text) {
-//     let asd=`<ul> <li>${text}</li> </ul>`;
 //     for (let i = 0; i < 3; i++) {
-//         console.log(arguments);
+//         document.write(`<ul> <li>${text}</li> </ul>`);
 //     }
 // }
 // foo('hello');
 
-// - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
-
-// let array=[11,22,'hello',true];
-// function foo(arr) {
-//        for (const item of arr) {
-//      console.log(`<ul> <li>${item}</li> </ul>`);
+// function foo(text,quantity) {
+//     for (let i = 0; i<quantity; i++) {
+//         document.write(`<ul> <li>${text}</li> </ul>`);
 //     }
 // }
-// foo(array);
+// foo('hello',3);
+
+// - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+
+
+// function foo(arr) {
+//     document.write(`<ul>`)
+//        for (const item of arr) {
+//      document.write(`<li>${item}</li>`);
+//     }
+//     document.write(`</ul>`);
+// }
+// foo([11,22,'hello',true]);
+
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
@@ -73,6 +91,15 @@
 // }
 // arr(names);
 
+
+// function asd(objects){
+//     for (const element of objects) {
+//      document.write(`<div>${element.id} ${element.name} ${element.age}</div>`);
+//     }
+//
+// }
+//  asd({id:23, name:'olya', age:32});
+
 // - створити функцію яка повертає найменьше число з масиву
 
 
@@ -82,6 +109,19 @@
 // }
 //
 // console.log(foo(array));
+
+
+//
+function foo(numbers) {
+    let min=numbers[0];
+    for (const number of numbers) {
+        if (min > number){
+            min = number
+        }
+    }
+    return min;
+}
+foo([33,45,32,56,12,27,234]);
 
 // - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
 
