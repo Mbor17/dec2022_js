@@ -77,19 +77,6 @@
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
-// let names=[
-//     {id:23, name:'olya', age:32},
-//     {id:22, name:'ivan', age:22},
-//     {id:35, name:'anna', age:25},
-//     {id:37, name:'kolya', age:23}
-// ]
-// function arr(array){
-//     for (const element of array) {
-//        console.log(element);
-//     }
-//
-// }
-// arr(names);
 
 
 // function asd(objects){
@@ -98,7 +85,12 @@
 //     }
 //
 // }
-//  asd({id:23, name:'olya', age:32});
+//  asd([
+//      {id:23, name:'olya', age:32},
+//      {id:22, name:'ivan', age:22},
+//      {id:35, name:'anna', age:25},
+//      {id:37, name:'kolya', age:23}
+//  ]);
 
 // - створити функцію яка повертає найменьше число з масиву
 
